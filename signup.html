@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Travelia</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('background.jpg') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        .auth-container {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            background: rgba(30, 30, 30, 0.9);
+        }
+        .auth-container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('./assets/images/signupbox.webp') no-repeat center center/cover;
+            filter: brightness(0.4);
+        }
+        .auth-content {
+            position: relative;
+            z-index: 2;
+            padding: 2rem;
+            text-align: center;
+        }
+        .auth-content img {
+            width: 100px;
+            margin-bottom: 1rem;
+        }
+        input, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        input {
+            background: rgba(255, 255, 255, 0.2);
+            color: #ffffff;
+            border: 1px solid #444;
+        }
+        input::placeholder {
+            color: #bbb;
+        }
+        button {
+            background: linear-gradient(135deg, #28A745, #1e7e34);
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background: linear-gradient(135deg, #1e7e34, #155d27);
+        }
+        a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        @media (max-width: 480px) {
+            .auth-container {
+                max-width: 90%;
+            }
+            .auth-content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-content">
+            <img src="favicon.svg" alt="Travelia Logo">
+            <h2>Sign Up</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+</body>
+</html>

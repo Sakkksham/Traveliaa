@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f1f1f;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #222;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar-list {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-item {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-link.active {
+    color: #ff4d6d;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: linear-gradient(to right, #ff4d6d, #ff8e53);
+    padding: 50px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Pricing Section */
+.pricing, .packages {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Pricing & Packages Grid */
+.pricing-grid, .packages-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Common Card Styling for Pricing & Packages */
+.pricing-card, .package-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #2a2a2a;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 10px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.pricing-card img, .package-card img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.pricing-card h3, .package-card h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff4d6d;
+}
+
+.price {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff8e53;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-card ul li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* CTA Button */
+.btn-primary {
+    display: inline-block;
+    background-color: #ff4d6d;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.btn-primary:hover {
+    background-color: #ff8e53;
+}
+
+/* Footer */
+.footer {
+    background: #222;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+}

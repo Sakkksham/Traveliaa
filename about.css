@@ -1,0 +1,170 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background: #007bff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.navbar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-item {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-link.active {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* About Section */
+.about {
+    background: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about .container {
+    max-width: 800px;
+    margin: auto;
+}
+
+.about h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Features Section */
+.features {
+    background: #f0f0f0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.features .container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.feature {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-5px);
+}
+
+.feature i {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    font-size: 1.4rem;
+}
+
+/* Reviews Section */
+.reviews {
+    background: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.reviews .container {
+    max-width: 900px;
+    margin: auto;
+}
+
+.reviews h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.review-card {
+    background: #007bff;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.review-card p {
+    font-size: 1.1rem;
+}
+
+.review-card h4 {
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+}

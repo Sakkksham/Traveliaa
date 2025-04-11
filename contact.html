@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travelia</title>
+    <link rel="stylesheet" href="styles.css">
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="index.html" class="navbar-link">Home</a></li>
+            <li class="navbar-item"><a href="about.html" class="navbar-link">About</a></li>
+            <li class="navbar-item"><a href="services.html" class="navbar-link">Services</a></li>
+            <li class="navbar-item"><a href="pricing.html" class="navbar-link active">Pricing</a></li>
+            <li class="navbar-item"><a href="contact.html" class="navbar-link">Contact</a></li>
+        </ul>
+    </nav>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background: #1e1e1e;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .contact-info, .contact-form {
+            background: #1e1e1e;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        h2 {
+            color: #ff4d6d;
+        }
+        .contact-details p {
+            font-size: 18px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, textarea {
+            background: #2a2a2a;
+            color: white;
+            border: 1px solid #ff4d6d;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        button {
+            background: #ff4d6d;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #ff1e4d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    
+    <section class="contact-info">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out to us for any inquiries or assistance.</p>
+            <div class="contact-details">
+                <p><strong>Email:</strong> info@travelia.com</p>
+                <p><strong>Phone:</strong> +123 456 7890</p>
+                <p><strong>Address:</strong> 123 Travel Street, Wanderland</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact-form">
+        <div class="container">
+            <h2>Send Us a Message</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
